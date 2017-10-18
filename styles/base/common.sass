@@ -48,9 +48,9 @@ body
 		font-size: 1.2em
 
 .c-btn
-	box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2)
-	border-radius: 25px
-	padding: 22px 54px
+	box-shadow: 0 em(3) 0 rgba(0, 0, 0, 0.2)
+	border-radius: em(25)
+	padding: em(22) em(54)
 	outline: 0
 	border: 0
 	cursor: pointer
@@ -69,7 +69,7 @@ body
 			background-color: lighten($color-yellow, 5%)
 		&:hover
 			background-color: darken($color-yellow, 5%)
-		padding: 20px 85px
+		padding: em(20) em(85)
 	&[disabled]
 		background-color: #eee
 		cursor: not-allowed
@@ -79,34 +79,49 @@ body
 .c-custom-radio
 	position: relative
 	+mediaMobileToTablet
-		padding: 25px 0
+		padding: em(25) 0
 		text-align: center
 	&__input
 		display: none
+		cursor: pointer
 		&:checked + .c-custom-radio__label::before
-			box-shadow: 0 0px 0 2px #549588, inset 0 0 0px 1px #fff
+			cursor: pointer
+			box-shadow: 0 0 0 em(2) #FEF969, 0 0 0 em(3) #549588
+			width: em(4)
+			height: em(4)
+			left: em(5)
+			top: em(11)
+			background-color: #549588
+			border-color: transparent
 			+mediaMobileToTablet
-				box-shadow: 0 0px 0 4px #549588, inset 0 0 0px 2px #fff
+				box-shadow: none
+				width: 2em
+				height: 2em
+				top: 0
+				left: 45%
+
 		&:checked + .c-custom-radio__label .c-custom-radio__text
 			+mediaMobileToTablet
 				text-decoration: underline
 	&__label
+		cursor: pointer
 		&::before 
 			position: absolute
-			left: 63px
+			left: em(63)
 			top: 25%
 			content: ''
 			display: inline-block
-			width: 10px
-			height: 10px
+			width: em(10)
+			height: em(10)
 			border-radius: 50%
-			background-color: #549588
-			+fastTransition(box-shadow, width, height)
+			border: em(1) solid #000
+			background-color: transparent
+			+fastTransition(background-color)
 			+mediaMobileToTablet
 				width: 2em
 				height: 2em
 	&__text
 		+fastTransition(text-decoration)
 		+mediaMobileToTablet
-			margin-top: 20px
+			margin-top: em(20)
 

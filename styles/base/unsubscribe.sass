@@ -1,33 +1,33 @@
 .c-unsubscribe
-	background-image: url('../../img/bg.png')
+	background-image: url(../../img/bg.png)
 	background-repeat: no-repeat
 	border-radius: 50%
-	padding: 111px 90px 69px
+	padding: em(111) em(92) em(68)
 	background-size: contain
 	text-align: center
 	+mediaMobileToTablet
 		border-radius: 10
-		padding: 10px
-		background-size: 200px
-		background-position: center top
+		padding: em(10)
+		background-size: em(200)
+		background-position: center em(20)
 	&__wrp
-		background-image: linear-gradient(to top, #f7e644 0%, #dabc2d 100%)
-		border-radius: 50%
+		// border-radius: 50%
 		+mediaMobileToTablet
+			background-image: linear-gradient(to top, #f7e644 0%, #dabc2d 100%)
 			border-radius: 0
 	&__header
 		text-align: center
-		margin-top: 10px
+		margin-top: em(10, 24)
 	&__unsubscribe-descr
 	&__reason-heading
-	    margin-top: 30px;
+	    margin-top: em(30)
 	    margin-bottom: 0
 	&__help-us
-		margin-top: 10px
+		margin-top: em(10, 14)
 		+mediaMobileToTablet
-			margin-top: 30px
+			margin-top: em(30, 10)
 	&__form
-		margin-top: 8px
+		margin-top: em(8)
 		&--to-left
 			display: inline-block
 			text-align: left
@@ -42,21 +42,21 @@
 					padding-left: 0
 	&__submit
 		display: block
-		margin: 31px auto 0
-		padding: 13px 52px
+		margin: em(31) auto 0
+		padding: em(13) em(52)
 
 
 
 .c-resub
-	padding: 0 101px
-	margin-top: 30px
+	padding: 0 em(101)
+	margin-top: em(30)
 	text-align: center
 	&__button
-		padding: 12px 81px
-		margin-top: 11px
+		padding: em(12) em(81)
+		margin-top: em(11)
 	&__button-text
 		text-transform: uppercase
-		letter-spacing: 0.7px
+		letter-spacing: em(0.7)
 	+mediaMobileToTablet
-		padding: 10px
+		padding: em(10)
 
