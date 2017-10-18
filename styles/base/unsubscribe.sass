@@ -1,0 +1,62 @@
+.c-unsubscribe
+	background-image: url('../../img/bg.png')
+	background-repeat: no-repeat
+	border-radius: 50%
+	padding: 111px 90px 69px
+	background-size: contain
+	text-align: center
+	+mediaMobileToTablet
+		border-radius: 10
+		padding: 10px
+		background-size: 200px
+		background-position: center top
+	&__wrp
+		background-image: linear-gradient(to top, #f7e644 0%, #dabc2d 100%)
+		border-radius: 50%
+		+mediaMobileToTablet
+			border-radius: 0
+	&__header
+		text-align: center
+		margin-top: 10px
+	&__unsubscribe-descr
+	&__reason-heading
+	    margin-top: 30px;
+	    margin-bottom: 0
+	&__help-us
+		margin-top: 10px
+		+mediaMobileToTablet
+			margin-top: 30px
+	&__form
+		margin-top: 8px
+		&--to-left
+			display: inline-block
+			text-align: left
+			.c-custom-radio__label::before
+				left: 2px
+				+mediaMobileToTablet
+					top: 0
+					left: 45%
+			.c-custom-radio
+				padding-left: 32px
+				+mediaMobileToTablet
+					padding-left: 0
+	&__submit
+		display: block
+		margin: 31px auto 0
+		padding: 13px 52px
+
+
+
+.c-resub
+	padding: 0 101px
+	margin-top: 30px
+	text-align: center
+	&__button
+		padding: 12px 81px
+		margin-top: 11px
+	&__button-text
+		text-transform: uppercase
+		letter-spacing: 0.7px
+	+mediaMobileToTablet
+		padding: 10px
+

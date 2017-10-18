@@ -1,0 +1,112 @@
+\:root
+	font-size: 16px
+
+body 
+	background-color: #000
+
+* 
+	box-sizing: border-box
+
+.l-container
+	max-width: em(573)
+	margin: 0 auto
+
+
+.c-heading
+	color: $color-black
+	font-family: $font-roboto
+	font-weight: $fw-b
+	&--1
+		font-size: rem(24)
+		line-height: em(36, 24)
+		letter-spacing: em(1.2, 24)
+	&--2
+		font-size: rem(16)
+		line-height: em(24)
+		letter-spacing: em(0.8)
+	&--accent
+		color: #ffe401
+		font-size: rem(16)
+		line-height: em(24)
+		text-transform: uppercase
+		letter-spacing: em(0.8)
+	+mediaMobileToTablet
+		font-size: 2em
+
+.c-paragraph
+	color: $color-light-black
+	font-family: $font-roboto
+	font-size: rem(14)
+	font-weight: $fw-n
+	line-height: em(24, 14)
+	letter-spacing: em(0.7, 14)
+	&--thin
+		font-weight: $fw-l
+		line-height: em(30, 14)
+		letter-spacing: em(0.7, 14)
+	+mediaMobileToTablet
+		font-size: 1.2em
+
+.c-btn
+	box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2)
+	border-radius: 25px
+	padding: 22px 54px
+	outline: 0
+	border: 0
+	cursor: pointer
+	&--black
+		background-color: #272727
+		&:active
+			background-color: lighten(#272727, 5%)
+		&:hover
+			background-color: darken(#272727, 5%)
+
+		.c-btn__paragraph
+			color: #fff
+	&--yellow
+		background-color: $color-yellow
+		&:active
+			background-color: lighten($color-yellow, 5%)
+		&:hover
+			background-color: darken($color-yellow, 5%)
+		padding: 20px 85px
+	&[disabled]
+		background-color: #eee
+		cursor: not-allowed
+		.c-btn__paragraph
+			color: #000
+
+.c-custom-radio
+	position: relative
+	+mediaMobileToTablet
+		padding: 25px 0
+		text-align: center
+	&__input
+		display: none
+		&:checked + .c-custom-radio__label::before
+			box-shadow: 0 0px 0 2px #549588, inset 0 0 0px 1px #fff
+			+mediaMobileToTablet
+				box-shadow: 0 0px 0 4px #549588, inset 0 0 0px 2px #fff
+		&:checked + .c-custom-radio__label .c-custom-radio__text
+			+mediaMobileToTablet
+				text-decoration: underline
+	&__label
+		&::before 
+			position: absolute
+			left: 63px
+			top: 25%
+			content: ''
+			display: inline-block
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			background-color: #549588
+			+fastTransition(box-shadow, width, height)
+			+mediaMobileToTablet
+				width: 2em
+				height: 2em
+	&__text
+		+fastTransition(text-decoration)
+		+mediaMobileToTablet
+			margin-top: 20px
+
