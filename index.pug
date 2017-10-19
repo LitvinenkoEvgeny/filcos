@@ -16,14 +16,14 @@ html(lang="en")
             .c-unsubscribe
                 .c-unsubscribe__inner
                     h1.c-heading.c-heading--1.c-unsubscribe__header Вы отписались от рассылки
-                    p.c-paragraph.c-unsubscribe__unsubscribe__descr Теперь, мы не сможем присылать вам персональные  предложения по кредитам
+                    p.c-paragraph.c-unsubscribe__unsubscribe__descr Теперь, мы не сможем присылать вам персональные предложения по кредитам
                     h2.c-heading.c-heading--2.c-unsubscribe__reason-heading Пожалуйста, укажите причину отписки
                     p.c-paragraph.c-unsubscribe__help-us Эта информация поможет нам стать лучше
                     form.c-unsubscribe__form.c-unsubscribe__form--to-left(action=".")
                         .c-custom-radio
                             input#not-intresting.c-radio-input.c-custom-radio__input(type="radio" value="not intresting" name="reason")
                             label.c-input-label.c-custom-radio__label(for="not-intresting")
-                                span.c-paragraph.c-paragraph--thin.c-custom-radio__text Неинтересное предложение 
+                                span.c-paragraph.c-paragraph--thin.c-custom-radio__text Неинтересное предложение
 
                         .c-custom-radio
                             input#not-subscribe.c-radio-input.c-custom-radio__input(type="radio" value="not subscribe" name="reason")
@@ -35,13 +35,12 @@ html(lang="en")
                             label.c-input-label.c-custom-radio__label(for="too-much-letters")
                                 span.c-paragraph.c-paragraph--thin.c-custom-radio__text Письма приходят слишком часто
 
-                        button.c-btn.c-btn--black.c-unsubscribe__submit(type="submit" disabled)
+                        button.c-btn.c-btn--black.c-unsubscribe__submit(type="submit")
                             span.c-paragraph.c-btn__paragraph Ответить
         .c-resub
-            h2.c-heading.c-heading--1.c-heading--accent.c-resub__heading Если вы отписались случайно-просто  востановите подписку
+            h2.c-heading.c-heading--1.c-heading--accent.c-resub__heading Если вы отписались случайно-просто востановите подписку
             button.c-btn.c-btn--yellow.c-btn--center.c-resub__button
                 span.c-paragraph.c-btn__paragraph.c-resub__button-text.c-resub__button-text восстановить подписку
-    
 
 
     script(src="js/bundle.min.js")
